@@ -8,15 +8,6 @@ class signIn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        title: Text("Dashboard",style: TextStyle(fontSize: 14,color: Colors.white),),
-        leading: IconButton(
-            onPressed: (){
-               MoveToBackground.moveTaskToBack();
-            },
-            icon: Icon(Icons.arrow_back,color: Colors.white,size: 30,)),
-      ),
        body: Body()
     );
   }
