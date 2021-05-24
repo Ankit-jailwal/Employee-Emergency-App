@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:move_to_background/move_to_background.dart';
+import 'package:move_to_background/move_to_background.dart';
 import 'package:emergencyapp/screens/signIn/components/body.dart';
 
 class signIn extends StatelessWidget {
@@ -12,11 +12,11 @@ class signIn extends StatelessWidget {
         backgroundColor: Colors.transparent,
         leading: IconButton(
             onPressed: (){
-              // MoveToBackground.moveTaskToBack();
+               MoveToBackground.moveTaskToBack();
             },
             icon: Icon(Icons.arrow_back,color: Colors.white,size: 30,)),
       ),
-      // body: Body()
+       body: Body()
     );
   }
 }
