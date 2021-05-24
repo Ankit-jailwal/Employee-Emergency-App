@@ -1,6 +1,6 @@
 # emergencyapp
 
-Emplyee Emergency App
+Employee Emergency App
 
 ## Getting Started
 
