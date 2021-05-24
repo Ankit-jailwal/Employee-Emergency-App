@@ -1,4 +1,5 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:emergencyapp/screens/signIn/signIn.dart';
 import 'package:flutter/material.dart';
 
 void main() {
