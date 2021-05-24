@@ -4,11 +4,10 @@ import 'package:emergencyapp/screens/signIn/signIn.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(EmergencyApp());
 }
 
-class MyApp extends StatelessWidget {
-
+class EmergencyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
