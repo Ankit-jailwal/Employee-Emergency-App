@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       //theme: theme(),
       home: AnimatedSplashScreen(
         duration: 2500,
-        splash: Image.asset("assets/images/Emergency.png"),
+        splash: Image.asset("assets/images/Emergency.jpg"),
         splashIconSize: 250,
         nextScreen: signIn(),
         splashTransition: SplashTransition.slideTransition,
