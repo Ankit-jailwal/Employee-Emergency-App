@@ -15,7 +15,7 @@ class EmergencyApp extends StatelessWidget {
       title: 'Employee Emergency App',
       //theme: theme(),
       home: AnimatedSplashScreen(
-        duration: 2500,
+        duration: 2000,
         splash: Image.asset("assets/images/Emergency.jpg"),
         splashIconSize: 250,
         nextScreen: signIn(),
