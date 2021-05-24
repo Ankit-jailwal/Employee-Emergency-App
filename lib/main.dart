@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'ShoProx',
+      title: 'Employee Emergency App',
       //theme: theme(),
       home: AnimatedSplashScreen(
         duration: 2500,
-        splash: Image.asset("assets/images/cartel101.png"),
+        splash: Image.asset("assets/images/Emergency.png"),
         splashIconSize: 250,
         nextScreen: signIn(),
         splashTransition: SplashTransition.slideTransition,
