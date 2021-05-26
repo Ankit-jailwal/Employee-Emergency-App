@@ -12,10 +12,12 @@ dependencies:
   animated_splash_screen: ^1.1.0
   flutter:
     sdk: flutter
-  flutter_map: 0.10.1+1
   url_launcher: ^6.0.3
   http: 0.12.2
   move_to_background: ^1.0.2
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^0.19.1
+  fluttertoast: ^8.0.3
 
 dependency_overrides:
   flutter_offline: 0.2.4+1
