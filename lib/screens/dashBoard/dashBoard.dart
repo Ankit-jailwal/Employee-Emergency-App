@@ -1,3 +1,4 @@
+import 'package:emergencyapp/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:emergencyapp/screens/dashBoard/components/body.dart';
 
@@ -6,9 +7,9 @@ class dashBoard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xff262833),
+        backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: Colors.transparent,
+          backgroundColor: kPrimaryColor,
           leading: IconButton(
               onPressed: (){
                 Navigator.pop(context);
