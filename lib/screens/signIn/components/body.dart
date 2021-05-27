@@ -68,8 +68,48 @@ class _BodyState extends State<Body> {
                     ),
                 ),
               ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                  width: size.width * 0.8,
+                  decoration: BoxDecoration(
+                    color: kPrimaryLightColor,
+                    borderRadius: BorderRadius.circular(29),
+                  ),
+                  child:  TextField(
+                    obscureText: true,
+                    cursorColor: kPrimaryColor,
+                    decoration: InputDecoration(
+                      hintText: "Password",
+                      icon: Icon(
+                        Icons.lock,
+                        color: kPrimaryColor,
+                      ),
+                      suffixIcon: Icon(
+                        Icons.visibility,
+                        color: kPrimaryColor,
+                      ),
+                      border: InputBorder.none,
+                    ),
+                  ),
+                ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 10),
+                width: size.width * 0.8,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(29),
+                  child: FlatButton(
+                    onPressed: (){},
+                    padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+                    color: kPrimaryColor,
+                    child: Text(
+                      "LOGIN",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+              ),
                 SizedBox(height: size.height * 0.03),
-
               ],
             ),
           ),
