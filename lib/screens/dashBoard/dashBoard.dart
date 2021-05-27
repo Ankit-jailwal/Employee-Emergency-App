@@ -9,7 +9,8 @@ class dashBoard extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: kPrimaryColor,
+          backgroundColor: kPrimaryColor.withOpacity(0.7),
+          title: Text("Dashboard", style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w400),),
           leading: IconButton(
               onPressed: (){
                 Navigator.pop(context);
