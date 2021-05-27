@@ -1,3 +1,4 @@
+import 'package:emergencyapp/constant.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatefulWidget {
@@ -8,8 +9,6 @@ class Body extends StatefulWidget {
 }
 
 class _BodyState extends State<Body> {
-  bool _isSigningIn = false;
-
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -49,7 +48,26 @@ class _BodyState extends State<Body> {
                   height: size.height * 0.35,
                 ),
                 SizedBox(height: size.height * 0.03),
-
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 10),
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                width: size.width * 0.8,
+                decoration: BoxDecoration(
+                  color: kPrimaryLightColor,
+                  borderRadius: BorderRadius.circular(29),
+                ),
+                child:  TextField(
+                    cursorColor: kPrimaryColor,
+                    decoration: InputDecoration(
+                      icon: Icon(
+                        Icons.person,
+                        color: kPrimaryColor,
+                      ),
+                      hintText: "Your Email",
+                      border: InputBorder.none,
+                    ),
+                ),
+              ),
                 SizedBox(height: size.height * 0.03),
 
               ],
