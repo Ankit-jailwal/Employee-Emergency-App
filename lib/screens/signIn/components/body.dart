@@ -1,5 +1,6 @@
 import 'package:emergencyapp/components/disbaleScrollGlow.dart';
 import 'package:emergencyapp/constant.dart';
+import 'package:emergencyapp/screens/dashBoard/dashBoard.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatefulWidget {
@@ -110,7 +111,9 @@ class _BodyState extends State<Body> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(29),
                     child: FlatButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>dashBoard()));
+                      },
                       padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
                       color: kPrimaryColor,
                       child: Text(
