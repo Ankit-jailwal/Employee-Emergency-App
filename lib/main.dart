@@ -1,6 +1,8 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:emergencyapp/constant.dart';
 import 'package:emergencyapp/routes.dart';
 import 'package:emergencyapp/screens/signIn/signIn.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,10 +15,19 @@ class EmergencyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Employee Emergency App',
-      //theme: theme(),
       home: AnimatedSplashScreen(
         duration: 2000,
-        splash: Image.asset("assets/images/Emergency.jpg"),
+        splash: Column(
+          children: [
+            Container(
+                width: 200,
+                child:
+            Image.asset("assets/images/Emergency.png")),
+            SizedBox(height: 20,),
+            Text("Employee Emergency App",style: TextStyle(color: kPrimaryColor,fontSize: 20,fontWeight: FontWeight.w600),),
+           // CircularProgressIndicator(color: kPrimaryLightColor,)
+          ],
+        ),
         splashIconSize: 250,
         nextScreen: signIn(),
         splashTransition: SplashTransition.slideTransition,
