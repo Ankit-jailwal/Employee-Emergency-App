@@ -10,6 +10,12 @@ class Body extends StatefulWidget {
 }
 
 class _BodyState extends State<Body> {
+  bool _isHidden = true;
+  void _toggleVisibility() {
+    setState(() {
+      _isHidden = !_isHidden;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -76,7 +82,7 @@ class _BodyState extends State<Body> {
                       borderRadius: BorderRadius.circular(29),
                     ),
                     child:  TextField(
-                      obscureText: true,
+                      obscureText: _isHidden,
                       cursorColor: kPrimaryColor,
                       decoration: InputDecoration(
                         hintText: "Password",
@@ -84,9 +90,15 @@ class _BodyState extends State<Body> {
                           Icons.lock,
                           color: kPrimaryColor,
                         ),
-                        suffixIcon: Icon(
-                          Icons.visibility,
-                          color: kPrimaryColor,
+                        suffixIcon: GestureDetector(
+                          onTap: _toggleVisibility,
+                          child: _isHidden?Icon(
+                            Icons.visibility_off,
+                            color: kPrimaryColor,
+                          ):Icon(
+                            Icons.visibility,
+                            color: kPrimaryColor,
+                          ),
                         ),
                         border: InputBorder.none,
                       ),
