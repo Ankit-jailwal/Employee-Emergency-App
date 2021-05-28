@@ -35,4 +35,7 @@ flutter:
   assets:
     - assets/images/
 
-
+  fonts:
+    - family: oswald
+      fonts:
+        - asset: assets/fonts/Oswald.ttf

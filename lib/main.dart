@@ -16,7 +16,7 @@ class EmergencyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Employee Emergency App',
       home: AnimatedSplashScreen(
-        duration: 2000,
+        duration: 2500,
         splash: Column(
           children: [
             Container(
