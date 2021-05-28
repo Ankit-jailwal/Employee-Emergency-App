@@ -24,7 +24,7 @@ class EmergencyApp extends StatelessWidget {
                 child:
             Image.asset("assets/images/Emergency.png")),
             SizedBox(height: 20,),
-            Text("Employee Emergency App",style: TextStyle(color: kPrimaryColor,fontSize: 20,fontWeight: FontWeight.w600),),
+            Text("Employee Emergency App",style: TextStyle(color: kPrimaryColor,fontSize: 20,fontWeight: FontWeight.w600,fontFamily: "oswald"),),
            // CircularProgressIndicator(color: kPrimaryLightColor,)
           ],
         ),
