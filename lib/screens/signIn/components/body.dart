@@ -4,12 +4,9 @@ import 'package:emergencyapp/screens/dashBoard/dashBoard.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatefulWidget {
-
-
   @override
   _BodyState createState() => _BodyState();
 }
-
 class _BodyState extends State<Body> {
   bool _isHidden = true;
   void _toggleVisibility() {
