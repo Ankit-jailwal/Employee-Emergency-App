@@ -8,12 +8,7 @@ class Body extends StatefulWidget {
 
 class _BodyState extends State<Body> {
   final CarouselController _controller = CarouselController();
-
-  List _isHovering = [false, false, false, false, false, false, false];
-  List _isSelected = [true, false, false, false, false, false, false];
-
   int _current = 0;
-
   final List<String> images = [
     'https://indojapanpulse.com/wp-content/uploads/2018/11/02_Lets_Get_Prepared-20.jpg',
     'https://indojapanpulse.com/wp-content/uploads/2018/11/02_Lets_Get_Prepared-26.jpg',
@@ -29,7 +24,8 @@ class _BodyState extends State<Body> {
             borderRadius: BorderRadius.circular(8.0),
             child: Image.network(
               element,
-              height:screenSize.height*0.35,
+              height:screenSize.height*0.3,
+              width: screenSize.width*0.9,
               fit: BoxFit.cover,
             ),
           ),
@@ -42,6 +38,7 @@ class _BodyState extends State<Body> {
     var imageSliders = generateImageTiles(screenSize);
     return Column(
       children: [
+        SizedBox(height: 10,),
         CarouselSlider(
           items: imageSliders,
           options: CarouselOptions(
@@ -51,13 +48,6 @@ class _BodyState extends State<Body> {
               onPageChanged: (index, reason) {
                 setState(() {
                   _current = index;
-                  for (int i = 0; i < imageSliders.length; i++) {
-                    if (i == index) {
-                      _isSelected[i] = true;
-                    } else {
-                      _isSelected[i] = false;
-                    }
-                  }
                 });
               }),
           carouselController: _controller,
