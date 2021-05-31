@@ -15,6 +15,7 @@ dependencies:
   http: 0.12.2
   move_to_background: ^1.0.2
   cupertino_icons: ^1.0.2
+  carousel_slider: ^3.0.0
   fluttertoast: ^8.0.3
   splashscreen:
     git:
