@@ -15,22 +15,27 @@ class _BodyState extends State<Body> {
   int _current = 0;
 
   final List<String> images = [
-    'assets/images/maati.jpg',
-    'assets/images/tradegood.jpg',
-    'assets/images/blogx.jpg',
-    'assets/images/wsim.jpg',
-    'assets/images/emp.jpg',
-    'assets/images/radar.jpg',
+    'https://indojapanpulse.com/wp-content/uploads/2018/11/02_Lets_Get_Prepared-20.jpg',
+    'https://indojapanpulse.com/wp-content/uploads/2018/11/02_Lets_Get_Prepared-26.jpg',
+    'https://compote.slate.com/images/0c46318a-314c-4a32-8ffd-9e48515995be.jpg',
+    'https://indojapanpulse.com/wp-content/uploads/2018/11/02_Lets_Get_Prepared-20.jpg',
+    'https://indojapanpulse.com/wp-content/uploads/2018/11/02_Lets_Get_Prepared-26.jpg',
+    'https://compote.slate.com/images/0c46318a-314c-4a32-8ffd-9e48515995be.jpg',
   ];
-
-  final List<String> places = [
-    'MAATI',
-    'TRADEGOOD',
-    'BLOGX',
-    'W-GSIM',
-    'EMP',
-    'RADAR',
-  ];
+  List<Widget> generateImageTiles(screenSize) {
+    var screenSize = MediaQuery.of(context).size;
+    return images.map(
+          (element) => ClipRRect(
+            borderRadius: BorderRadius.circular(8.0),
+            child: Image.network(
+              element,
+              height:screenSize.height*0.35,
+              fit: BoxFit.cover,
+            ),
+          ),
+    )
+        .toList();
+  }
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
