@@ -60,8 +60,8 @@ class _BodyState extends State<Body> {
           borderRadius: BorderRadius.circular(5),
           ),
           child: Padding(
-            padding: EdgeInsets.only(left: 40,right: 40,top: 8,bottom: 8),
-           child: Text("Report Emergency",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w700,fontSize: 14),),
+            padding: EdgeInsets.only(top: 8,bottom: 8),
+           child: Center(child: Text("Report Emergency",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w700,fontSize: 14),)),
           ),
         )
       ],
