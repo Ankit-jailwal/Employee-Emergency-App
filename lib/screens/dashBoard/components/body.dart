@@ -52,6 +52,13 @@ class _BodyState extends State<Body> {
               }),
           carouselController: _controller,
         ),
+        SizedBox(height: 10,),
+        Container(
+          width: screenSize.width*0.8,
+          decoration: BoxDecoration(
+
+          ),
+        )
       ],
     );
   }
