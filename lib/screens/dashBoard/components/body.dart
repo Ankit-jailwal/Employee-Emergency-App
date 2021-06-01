@@ -56,7 +56,12 @@ class _BodyState extends State<Body> {
         Container(
           width: screenSize.width*0.8,
           decoration: BoxDecoration(
-
+          color: Color(0xffEB4A3F),
+          borderRadius: BorderRadius.circular(5),
+          ),
+          child: Padding(
+            padding: EdgeInsets.only(left: 40,right: 40,top: 8,bottom: 8),
+           child: Text("Report Emergency",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w700,fontSize: 14),),
           ),
         )
       ],
