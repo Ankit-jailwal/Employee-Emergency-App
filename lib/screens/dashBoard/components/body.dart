@@ -61,7 +61,7 @@ class _BodyState extends State<Body> {
           ),
           child: Padding(
             padding: EdgeInsets.only(top: 8,bottom: 8),
-           child: Center(child: Text("Report Emergency",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w700,fontSize: 14),)),
+           child: Center(child: Text("Report Emergency",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w700,fontSize: 16),)),
           ),
         )
       ],
