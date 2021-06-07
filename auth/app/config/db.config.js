@@ -1,9 +1,9 @@
 module.exports = {
-    HOST: "locahost",
+    HOST: "127.0.0.1",
     USER: "ga1ileo",
     PASSWORD: "kyubatau",
     DB: "authdb",
-    dialect: "mysql",
+    dialect: "mariadb",
     pool:{
         max:5,
         min:0,
