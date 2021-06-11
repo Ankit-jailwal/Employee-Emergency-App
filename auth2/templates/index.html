@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>EVA emergency</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='assets/img/6bit.jpeg') }}" rel="icon">
+  <link href="{{ url_for('static', filename='assets/img/6bit.jpeg') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div id="logo">
+        <h1><a href="index.html">EVA</a></h1>
+       <a href="index.html"><img src="{{ url_for('static', filename='assets/img/logo.png') }}" alt=""></a> 
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#features">Features</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div class="hero-text" data-aos="zoom-out">
+      <h2>Welcome to EVA</h2>
+      <p>We are team of talented designers </p>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+
+    <div class="product-screens">
+
+      <div class="product-screen-1" data-aos="fade-up" data-aos-delay="400">
+        <img src="{{ url_for('static', filename='assets/img/product-screen-1.png') }}" alt="">
+      </div>
+
+      <div class="product-screen-2" data-aos="fade-up" data-aos-delay="200">
+        <img src="{{ url_for('static', filename='assets/img/product-screen-2.png') }}" alt="">
+      </div>
+
+      <div class="product-screen-3" data-aos="fade-up">
+        <img src="{{ url_for('static', filename='assets/img/product-screen-3.png') }}" alt="">
+      </div>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">About Us</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">
+            EVA Emergency is a mobile app for emergency response and evacuation.  It uses a map interface to better communicate emergency details.  It has been built with multiple redundancies that maximise reliability.  If you want to try the app simply register a Company in our Back End Application, set up a site and allocate users to it.  It only takes five minutes!  And you don’t need to enter any payment details or anything 😉
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 about-img" data-aos="fade-right" dat-aos-delay="100">
+            <img src="{{ url_for('static', filename='assets/img/about-img.jpg') }}" alt="">
+          </div>
+
+          <div class="col-lg-6 content" data-aos="fade-left" dat-aos-delay="100">
+            <p>
+              EVA Emergency is a mobile app for emergency response and evacuation.  It uses a map interface to better communicate emergency details.  It has been built with multiple redundancies that maximise reliability.  If you want to try the app simply register a Company in our Back End Application, set up a site and allocate users to it.  It only takes five minutes!  And you don’t need to enter any payment details or anything 😉
+            </p>
+
+            <ul>
+              <li><i class="bi bi-check-circle"></i> We are a team of operation engineers and managers who have experienced first-hand the difficulties of adequately managing emergencies.</li>
+              <li><i class="bi bi-check-circle"></i> In 2016 we established ASSISTEM with the objective to provide businesses with an assisted emergency management tool which is easy to use, quick to deploy and does not require specific hardware or maintenance.</li>
+              <li><i class="bi bi-check-circle"></i> We are committed to improve the safety of our customers’ sites by providing a flexible, affordable and reliable tool for emergency coordination.</li>
+            </ul>
+
+            <p>
+              
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Featuress Section ======= -->
+    <section id="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 offset-lg-4">
+            <div class="section-header">
+              <h3 class="section-title">Product Featuress</h3>
+              <span class="section-divider"></span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-5 features-img">
+            <img src="{{ url_for('static', filename='assets/img/product-features.png') }}" alt="" data-aos="fade-right">
+          </div>
+
+          <div class="col-lg-8 col-md-7 ">
+
+            <div class="row">
+
+              <div class="col-lg-6 col-md-6 box" data-aos="fade-up">
+                <div class="icon"><i class="bi bi-briefcase"></i></div>
+                <h4 class="title"><a href="">Access to Emergency Information</a></h4>
+                <p class="description">Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box" data-aos="fade-up">
+                <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                <h4 class="title"><a href="">Alarm</a></h4>
+                <p class="description">Raise the alarm and notify registered site occupants. Instruct them how to react and what to do.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box" data-aos="fade-up" dat-aos-delay="100">
+                <div class="icon"><i class="bi bi-binoculars"></i></div>
+                <h4 class="title"><a href="">Users Location</a></h4>
+                <p class="description">Monitor in real time the progress of the evacuation drill and the registered site occupants’ location</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="bi bi-brightness-high"></i></div>
+                <h4 class="title"><a href="">Communication</a></h4>
+                <p class="description">Place a voice call to any registered site occupant according to their location on the map.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Featuress Section -->
+
+    <!-- ======= Advanced Featuress Section ======= -->
+    <section id="advanced-features">
+
+      <div class="features-row section-bg" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="advanced-feature-img-right wow fadeInRight" src="{{ url_for('static', filename='assets/img/advanced-feature-1.jpg') }}" alt="">
+              <div>
+                <h2>Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</h2>
+                <h3>Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</h3>
+                <p>Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</p>
+                <p>Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="advanced-feature-img-left" src="{{ url_for('static', filename='assets/img/advanced-feature-2.jpg') }}" alt="">
+              <div>
+                <h2>Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</h2>
+                <i class="bi bi-calendar4-week"></i>
+                <p>Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</p>
+                <i class="bi bi-bar-chart"></i>
+                <p>Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</p>
+                <i class="bi bi-brightness-high"></i>
+                <p>Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row section-bg" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="advanced-feature-img-right wow fadeInRight" src="{{ url_for('static', filename='assets/img/advanced-feature-3.jpg') }}" alt="">
+              <div>
+                <h2>Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.t esse</h2>
+                <h3>Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</h3>
+                <p>Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</p>
+                <i class="bi bi-binoculars"></i>
+                <p>Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Advanced Featuress Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 class="cta-title">Call To Action</h3>
+            <p class="cta-text"> Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= More Features Section ======= -->
+    <section id="more-features" class="section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h3 class="section-title">More Features</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="box">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title"><a href="">Access</a></h4>
+              <p class="description">Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions..</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">Access</a></h4>
+              <p class="description">Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box">
+              <div class="icon"><i class="bi bi-bar-chart"></i></div>
+              <h4 class="title"><a href="">Access</a></h4>
+              <p class="description">Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box">
+              <div class="icon"><i class="bi bi-binoculars"></i></div>
+              <h4 class="title"><a href="">Access</a></h4>
+              <p class="description">Give all site occupants (whether registered or not) access to the evacuation plan, contacts and details of the emergency and instructions.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End More Features Section -->
+
+    
+    
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h3 class="section-title">Pricing</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">EVA Emergency</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box">
+              <h3>regular</h3>
+              <h4><sup>Rs</sup>0<span> month</span></h4>
+              <ul>
+                <li><i class="bi bi-check-circle"></i>EVA Emergency</li>
+                <li><i class="bi bi-check-circle"></i>EVA Emergency</li>
+                <li><i class="bi bi-check-circle"></i>EVA Emergency</li>
+                <li><i class="bi bi-check-circle"></i>EVA Emergency</li>
+                <li><i class="bi bi-check-circle"></i> EVA Emergency</li>
+              </ul>
+              <a href="#" class="get-started-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box featured">
+              <h3>Big</h3>
+              <h4><sup>Rs</sup>29<span> month</span></h4>
+              <ul>
+                <li><i class="bi bi-check-circle"></i>EVA Emergency</li>
+                <li><i class="bi bi-check-circle"></i>EVA Emergency</li>
+                <li><i class="bi bi-check-circle"></i>EVA Emergency</li>
+                <li><i class="bi bi-check-circle"></i>EVA Emergency</li>
+                <li><i class="bi bi-check-circle"></i> EVA Emergency</li>
+              </ul>
+              <a href="#" class="get-started-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box">
+              <h3>bigger</h3>
+              <h4><sup>Rs</sup>49<span> month</span></h4>
+              <ul>
+                <li><i class="bi bi-check-circle"></i>EVA Emergency</li>
+                <li><i class="bi bi-check-circle"></i>EVA Emergency</li>
+                <li><i class="bi bi-check-circle"></i>EVA Emergency</li>
+                <li><i class="bi bi-check-circle"></i>EVA Emergency</li>
+                <li><i class="bi bi-check-circle"></i> EVA Emergency</li>
+              </ul>
+              <a href="#" class="get-started-btn">Get Started</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq">
+      <div class="container">
+
+        <div class="section-header">
+          <h3 class="section-title">Frequently Asked Questions</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">We are here to help</p>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">We are here to help<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                We are here to help.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">We are here to help <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                We are here to help
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">We are here to help <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                We are here to help
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">We are here to help <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                We are here to help
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">We are here to help <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                MoleWe are here to help
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">We are here to help <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                We are here to help
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Our Team</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">EVA Emergency</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/abhishekk.jpg') }}" alt=""></div>
+              <h4>Abhishek kumar jha</h4>
+              <span>Developer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/shivam.jpg') }}" alt=""></div>
+              <h4>Shivam sawarn</h4>
+              <span>Developer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/rashi.jpg') }}" alt=""></div>
+              <h4>Rashi</h4>
+              <span>Developer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team/vivek.jpg') }}" alt=""></div>
+              <h4>Vivek kaushik</h4>
+              <span>Developer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Gallery</h3>
+          <span class="section-divider"></span>
+          <p class="section-description"></p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" data-gall="portfolioGallery" class="gallery-lightbox">
+                <img src="{{ url_for('static', filename='assets/img/team/abhishekk.jpg') }}" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" data-gall="portfolioGallery" class="gallery-lightbox">
+                <img src="{{ url_for('static', filename='assets/img/team/shivam.jpg') }}" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" data-gall="portfolioGallery" class="gallery-lightbox">
+                <img src="{{ url_for('static', filename='assets/img/team/rashi.jpg') }}" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" data-gall="portfolioGallery" class="gallery-lightbox">
+                <img src="{{ url_for('static', filename='assets/img/team/vivek.jpg') }}" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" data-gall="portfolioGallery" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" data-gall="portfolioGallery" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3>Avilon</h3>
+              <p>EVA Emergency provides your site occupants with access to up-to-date emergency information.  Use the power in smartphones for their safety!</p>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>EVA<br>New Delhi ND 110014</p>
+              </div>
+
+              <div>
+                <i class="bi bi-envelope"></i>
+                <p>EVA@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="bi bi-phone"></i>
+                <p>+64956235411s</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  </div>
+                  <div class="form-group col-lg-6 mt-3 mt-lg-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-lg-start text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>EVA</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            
+            Designed by <a href="#">EVA</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+</body>
+
+</html>
